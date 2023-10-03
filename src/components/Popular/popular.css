@@ -1,0 +1,16 @@
+.popular{
+    height: 50px;
+    background-color: rgb(49, 47, 47);
+    color:white;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width:768px){
+    .popular{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
-// import Footer from './components/Footer/Footer'
+import Popular from './components/Popular/Popular'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+        <Popular/>
         <Routes>
           <Route path='/error' element={<h1>page error</h1>} />X
           <Route path='/loading' element={<h1>page loading</h1>} />X
@@ -15,7 +17,7 @@ function App() {
           <Route path='/movies' element={<h1>page movies</h1>} />X
           <Route path='/series' element={<h1>page series</h1>} />X
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </>
   )

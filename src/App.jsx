@@ -2,6 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Popular from './components/Popular/Popular'
 import Footer from './components/Footer/Footer'
+import Home from './pages/home/Home'
+import Movies from './pages/movies/Movies'
+import Series from './pages/series/Series'
+import './App.css'
 
 
 function App() {
@@ -10,13 +14,14 @@ function App() {
       <BrowserRouter>
         <Header />
         <Popular/>
+        <div className='bodyy'>
         <Routes>
-          <Route path='/error' element={<h1>page error</h1>} />X
-          <Route path='/loading' element={<h1>page loading</h1>} />X
-          <Route path='/home' element={<h1>page home</h1>} />X
-          <Route path='/movies' element={<h1>page movies</h1>} />X
-          <Route path='/series' element={<h1>page series</h1>} />X
+          <Route path='/' element={<Home/>} />
+          <Route path='/home' element={<Home/>} />
+          <Route path='/movies' element={<Movies/>} />
+          <Route path='/series' element={<Series/>} />
         </Routes>
+        </div>
         <Footer/>
       </BrowserRouter>
     </>

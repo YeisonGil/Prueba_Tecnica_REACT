@@ -1,9 +1,9 @@
 import './popular.css'
 
-function Popular() {
+function Popular({title}) {
   return (
     <div className='popular'>
-        <h2 className='title'>Popular Titles</h2>
+        <h2 className='title__popular'>{title}</h2>
     </div>
   )
 }
